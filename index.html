@@ -2,80 +2,143 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team 12 - TP2024/25</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <div class="top-bar">
-        <a href="#link1">Link 1</a>
-        <a href="#link2">Link 2</a>
-        <img src="/images/logo.png" alt="Logo" class="logo">
-        <a href="#link3">Link 3</a>
-        <a href="#link4">Link 4</a>
+        <a href="/index.html">My</a>
+        <a href="/progress.html">Progres</a>
+        <a href="/index.html"><img src="./assets/team-logo.png" alt="Logo" class="logo"/></a>
+        <a href="/theme.html">Téma</a>
+        <a href="/contact.html">Kontakt</a>
     </div>
     <div class="top-bar-mobile">
-        <img src="/images/logo.png" alt="Logo" class="logo">\
+        <a href="/index.html"><img src="./assets/team-logo.png" alt="Logo" class="logo"/></a>
         <div class="burger-menu">
             <div class="burger-line"></div>
             <div class="burger-line"></div>
             <div class="burger-line"></div>
         </div>
         <div class="mobile-menu">
-            <a href="#link1">Link 1</a>
-            <a href="#link2">Link 2</a>
-            <a href="#link3">Link 3</a>
-            <a href="#link4">Link 4</a>
+            <a href="/index.html">My</a>
+            <a href="/progress.html">Progres</a>
+            <a href="/theme.html">Téma</a>
+            <a href="/contact.html">Kontakt</a>
         </div>
     </div>
-    <div class="container live-background full-height">
-        <div class="team-grid">
-            <div class="team-card" id="daniela">
-                <img src="/images/team1.jpg" alt="Team 1" class="team-image">
-                <h2>Team 1</h2>
-                <p>Team 1 description</p>
+    <div class="full-width full-height live-background overflow-hidden lg-relative">
+        <div class="container">
+            <div class="team-grid">
+                <div class="team-card" id="daniela">
+                    <img src="./assets/person.png" alt="Daniela" class="team-image">
+                    <p>Daniela Paľuchová</p>
+                    <div class="team-card-detail" id="daniela-detail" onclick="closeOverlay()">
+                        <div class="team-card-detail-content" onclick="event.stopPropagation()">
+                            <div class="team-card-detail-close" onclick="closeOverlay();event.stopPropagation()">X</div>
+                            <p>Daniela Paľuchová</p>
+                            <p>vývojár so zameraním na frontend a dizajn. V školských projektoch mám skúsenosti so strojovým učením v pythone. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card" id="jakub">
+                    <img src="./assets/person.png" alt="Jakub" class="team-image">
+                    <p>Jakub František Setnický</p>
+                    <div class="team-card-detail" id="daniela-detail">
+                        <p>Daniela Paľuchová</p>
+                        <p>vývojár so zameraním na frontend a dizajn. V školských projektoch mám skúsenosti so strojovým učením v pythone. </p>
+                    </div>
+                </div>
+                <div class="team-card" id="jozef">
+                    <img src="./assets/person.png" alt="Jozef" class="team-image">
+                    <p>Juzef Barut</p>
+                    <div class="team-card-detail" id="daniela-detail">
+                        <p>Frontend Developer</p>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
+                <div class="team-card" id="dalibor">
+                    <img src="./assets/person.png" alt="Dalibor" class="team-image">
+                    <p>Dalibor Doša</p>
+                    <div class="team-card-detail" id="daniela-detail">
+                        <p>Frontend Developer</p>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
+                <div class="team-card" id="alex">
+                    <img src="./assets/person.png" alt="Alex" class="team-image">
+                    <p>Olexandr Galchyn</p>
+                    <div class="team-card-detail" id="daniela-detail">
+                        <p>Frontend Developer</p>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
+                <div class="team-card" id="filip">
+                    <img src="./assets/person.png" alt="Filip" class="team-image">
+                    <p>Filip Mojto</p>
+                    <div class="team-card-detail" id="daniela-detail">
+                        <p>Frontend Developer</p>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
             </div>
-            <div class="team-card" id="jakub">
-                <img src="/images/team2.jpg" alt="Team 2" class="team-image">
-                <h2>Team 2</h2>
-                <p>Team 2 description</p>
-            </div>
-            <div class="team-card" id="jozef">
-                <img src="/images/team3.jpg" alt="Team 3" class="team-image">
-                <h2>Team 3</h2>
-                <p>Team 3 description</p>
-            </div>
-            <div class="team-card" id="dalibor">
-                <img src="/images/team4.jpg" alt="Team 4" class="team-image">
-                <h2>Team 4</h2>
-                <p>Team 4 description</p>
-            </div>
-            <div class="team-card" id="alex">
-                <img src="/images/team4.jpg" alt="Team 4" class="team-image">
-                <h2>Team 4</h2>
-                <p>Team 4 description</p>
-            </div>
-            <div class="team-card" id="filip">
-                <img src="/images/team4.jpg" alt="Team 4" class="team-image">
-                <h2>Team 4</h2>
-                <p>Team 4 description</p>
-            </div>
+        </div>
     </div>
     <div class="full-width technologies">
-        <h2>Co uz Vieme</h2>
-        <div class="technology-grid">
-            <div class="technology-card">
-                <img src="/images/technology1.jpg" alt="Technology 1" class="technology-image">
+        <div class="container">
+            <h2>Čo už vieme</h2>
+            <div class="technology-grid">
+                <div class="technology-card">
+                    <img src="./assets/net.png" alt="Technology 1" class="technology-image">
+                </div>
+                <div class="technology-card">
+                    <img src="./assets/net.png" alt="Technology 1" class="technology-image">
+                </div>
+                <div class="technology-card">
+                    <img src="./assets/net.png" alt="Technology 1" class="technology-image">
+                </div>
+                <div class="technology-card">
+                    <img src="./assets/net.png" alt="Technology 1" class="technology-image">
+                </div>
+                <div class="technology-card">
+                    <img src="./assets/net.png" alt="Technology 1" class="technology-image">
+                </div>
+                <div class="technology-card">
+                    <img src="./assets/net.png" alt="Technology 1" class="technology-image">
+                </div>
+                <div class="technology-card">
+                    <img src="./assets/net.png" alt="Technology 1" class="technology-image">
+                </div>
+                <div class="technology-card">
+                    <img src="./assets/net.png" alt="Technology 1" class="technology-image">
+                </div>
+                <div class="technology-card">
+                    <img src="./assets/net.png" alt="Technology 1" class="technology-image">
+                </div>
+                <div class="technology-card">
+                    <img src="./assets/net.png" alt="Technology 1" class="technology-image">
+                </div>
+                <div class="technology-card">
+                    <img src="./assets/net.png" alt="Technology 1" class="technology-image">
+                </div>
+                <div class="technology-card">
+                    <img src="./assets/net.png" alt="Technology 1" class="technology-image">
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="full-width technologies">
+        <h2>Čo sa učíme</h2>
+        <div class="technology-wrap">
+            <div class="technology-grid">
+                <div class="technology-card">
+                    <img src="./assets/technology1.jpg" alt="Technology 1" class="technology-image">
+                </div>
             </div>
         </div>
+        
     </div>
-    <div class="full-width technologies"></div>
-        <h2>Co sa ucime</h2>
-        <div class="technology-grid">
-            <div class="technology-card">
-                <img src="/images/technology1.jpg" alt="Technology 1" class="technology-image">
-            </div>
-        </div>
-    </div>
-    <script src="/js/index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
