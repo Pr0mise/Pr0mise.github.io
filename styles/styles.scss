@@ -2,6 +2,7 @@ body {
     margin: 0;
     min-width: 370px;
     font-family: 'Helvetica', sans-serif;
+    background-color: #FAF9F6;
 }
 
 .container {
@@ -302,8 +303,17 @@ body {
     max-height: 150px;
     max-width: 150px;
     img {
-        object-fit: cover;
-        height: auto;
-        width: 100%;
+        object-fit: contain;
+        width: 150px;
+        height: 150px;
+        background-color: #FAF9F6;
     }
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
 }
