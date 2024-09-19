@@ -8,24 +8,24 @@
 </head>
 <body>
     <div class="top-bar">
-        <a href="/index.html">My</a>
-        <a href="/progress.html">Progres</a>
-        <a href="/index.html"><img src="./assets/team-logo.png" alt="Logo" class="logo"/></a>
-        <a href="/theme.html">Téma</a>
-        <a href="/contact.html">Kontakt</a>
+        <a href="./index.html">My</a>
+        <a href="./progress.html">Progres</a>
+        <a href="./index.html"><img src="./assets/team-logo.png" alt="Logo" class="logo"/></a>
+        <a href="./theme.html">Téma</a>
+        <a href="./contact.html">Kontakt</a>
     </div>
     <div class="top-bar-mobile">
-        <a href="/index.html"><img src="./assets/team-logo.png" alt="Logo" class="logo"/></a>
+        <a href="./index.html"><img src="./assets/team-logo.png" alt="Logo" class="logo"/></a>
         <div class="burger-menu">
             <div class="burger-line"></div>
             <div class="burger-line"></div>
             <div class="burger-line"></div>
         </div>
         <div class="mobile-menu">
-            <a href="/index.html">My</a>
-            <a href="/progress.html">Progres</a>
-            <a href="/theme.html">Téma</a>
-            <a href="/contact.html">Kontakt</a>
+            <a href="./index.html">My</a>
+            <a href="./progress.html">Progres</a>
+            <a href="./theme.html">Téma</a>
+            <a href="./contact.html">Kontakt</a>
         </div>
     </div>
     <div class="full-width full-height live-background overflow-hidden lg-relative">
@@ -45,41 +45,63 @@
                 <div class="team-card" id="jakub">
                     <img src="./assets/person.png" alt="Jakub" class="team-image">
                     <p>Jakub František Setnický</p>
-                    <div class="team-card-detail" id="daniela-detail">
-                        <p>Daniela Paľuchová</p>
-                        <p>vývojár so zameraním na frontend a dizajn. V školských projektoch mám skúsenosti so strojovým učením v pythone. </p>
+                    <div class="team-card-detail" id="jakub-detail" onclick="closeOverlay()">
+                        <div class="team-card-detail-content" onclick="event.stopPropagation()">
+                            <div class="team-card-detail-close" onclick="closeOverlay();event.stopPropagation()">X</div>
+                            <p>Jakub František Setnický</p>
+                            <p>Full-stack a DevOps developer v .NET a Azure so skúsenosťami s ML a AI v python. Začiatočnícke skúsenosti s Docker a cloud technológiami. </p>
+                        </div>
                     </div>
                 </div>
                 <div class="team-card" id="jozef">
                     <img src="./assets/person.png" alt="Jozef" class="team-image">
-                    <p>Juzef Barut</p>
-                    <div class="team-card-detail" id="daniela-detail">
-                        <p>Frontend Developer</p>
-                        <p>UI/UX Designer</p>
+                    <p>Jozef Barut</p>
+                    <div class="team-card-detail" id="jozef-detail" onclick="closeOverlay()">
+                        <div class="team-card-detail-content" onclick="event.stopPropagation()">
+                            <div class="team-card-detail-close" onclick="closeOverlay();event.stopPropagation()">X</div>
+                            <p>Jozef Barut</p>
+                            <p>Pracujem ako výskumný stážista v oblasti umelej inteligencie a aj vo svojom štúdiu som sa silno zameriaval na dátovú vedu a strojové učenie.</p>
+                        </div>
+                    </div>
+                    <div class="team-card-detail" id="jozef-detail">
                     </div>
                 </div>
                 <div class="team-card" id="dalibor">
                     <img src="./assets/person.png" alt="Dalibor" class="team-image">
                     <p>Dalibor Doša</p>
-                    <div class="team-card-detail" id="daniela-detail">
-                        <p>Frontend Developer</p>
-                        <p>UI/UX Designer</p>
+                    <div class="team-card-detail" id="dalibor-detail" onclick="closeOverlay()">
+                        <div class="team-card-detail-content" onclick="event.stopPropagation()">
+                            <div class="team-card-detail-close" onclick="closeOverlay();event.stopPropagation()">X</div>
+                            <p>Dalibor Doša</p>
+                            <p>vývojár so zameraním na vývoj medicínskeho softvéru PACS v C++ a webových aplikácií vo Flutteri. 
+                                Mám tiež skúsenosti so školskými projektmi v technológiách .NET, C#, Python, čo mi umožňuje pracovať na rôznych typoch softvérových riešení.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="team-card" id="alex">
                     <img src="./assets/person.png" alt="Alex" class="team-image">
                     <p>Olexandr Galchyn</p>
-                    <div class="team-card-detail" id="daniela-detail">
-                        <p>Frontend Developer</p>
-                        <p>UI/UX Designer</p>
+                    <div class="team-card-detail" id="alex-detail" onclick="closeOverlay()">
+                        <div class="team-card-detail-content" onclick="event.stopPropagation()">
+                            <div class="team-card-detail-close" onclick="closeOverlay();event.stopPropagation()">X</div>
+                            <p>Olexandr Galchyn</p>
+                            <p>vývojár, ktorý sa špecializuje na vývoj webových aplikácií. Mám skúsenosti s full-stack vývojom v .NET a Angular. 
+                                Okrem toho mám začiatočnícke skúsenosti s vývojom firmvéru pre mikropočítače (STM32) a vývojom mobilných aplikácií v nástroji Flutter.</p>
+                        </div>
+                    </div>
+                    <div class="team-card-detail" id="alex-detail">
                     </div>
                 </div>
                 <div class="team-card" id="filip">
                     <img src="./assets/person.png" alt="Filip" class="team-image">
                     <p>Filip Mojto</p>
-                    <div class="team-card-detail" id="daniela-detail">
-                        <p>Frontend Developer</p>
-                        <p>UI/UX Designer</p>
+                    <div class="team-card-detail" id="filip-detail" onclick="closeOverlay()">
+                        <div class="team-card-detail-content" onclick="event.stopPropagation()">
+                            <div class="team-card-detail-close" onclick="closeOverlay();event.stopPropagation()">X</div>
+                            <p>Filip Mojto</p>
+                            <p>developer so zameraním na automatizáciu a skusenosťam is web developmentom(Laravel, PHP, Bootsrap…).
+                                 Kladiem dôraz na dodržiavanie best practices pri vývoji a zapájam moderné technológie ako Machine learning a AI.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -137,7 +159,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
     <script src="./js/index.js"></script>
 </body>

@@ -179,6 +179,9 @@ body {
   font-weight: bold;
   padding: 10px;
 }
+.team-card:hover img {
+  box-shadow: 0 0 50px 50px rgba(128, 0, 128, 0.8);
+}
 .team-card img {
   border-radius: 50%;
   -o-object-fit: cover;
@@ -268,11 +271,15 @@ body {
   position: relative;
   background-color: purple;
   padding: 15px;
+  max-width: 980px;
+  max-height: calc(100vh - 60px);
+  line-height: 2.25;
+  overflow-y: auto;
 }
 .team-card-detail .team-card-detail-content .team-card-detail-close {
   position: absolute;
   top: 5px;
-  right: 5px;
+  right: 10px;
   padding: 5px;
   cursor: pointer;
 }
