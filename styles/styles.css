@@ -188,6 +188,8 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
+  width: 255px;
+  height: 255px;
 }
 .team-card p {
   cursor: pointer;
@@ -312,10 +314,31 @@ body {
   background-color: #FAF9F6;
 }
 
+.empty-page {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+@media (min-height: 800px) {
+  .empty-page {
+    height: calc(100vh - 131px);
+  }
+}
+.empty-page * {
+  flex: 0 1 auto;
+}
+.empty-page img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 5px;
   margin-top: 10px;
 }/*# sourceMappingURL=styles.css.map */
