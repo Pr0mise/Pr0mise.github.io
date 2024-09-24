@@ -32,3 +32,8 @@ function closeOverlay() {
         e.classList.remove('open');
     }
 }
+
+function openDetail(name) {
+    let id = '#' + name + '-detail';
+    document.querySelector(id).classList.toggle('open');
+}

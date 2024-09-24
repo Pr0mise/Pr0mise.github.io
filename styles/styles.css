@@ -194,6 +194,16 @@ body {
 .team-card p {
   cursor: pointer;
 }
+.team-card button {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 
 @media (min-width: 980px) {
   #daniela {
