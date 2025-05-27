@@ -37,3 +37,13 @@ function openDetail(name) {
     let id = '#' + name + '-detail';
     document.querySelector(id).classList.toggle('open');
 }
+
+function downloadPDF() {
+  const pdfUrl = './pdfs/ZapisniceTeam12.pdf';
+  const link = document.createElement('a');
+  link.href = pdfUrl;
+  link.download = 'ZapisniceTeam12.pdf'; // Názov stiahnutého súboru
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
